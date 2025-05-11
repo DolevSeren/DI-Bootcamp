@@ -1,114 +1,119 @@
-# #strings method
-#
-# "hello python".capitalize()
-# "hello python".lower()
-# "hello python".upper()
-#
-# print("goodnight moon".replace("moon", "honey"))
-#
-# # sequnce of charts - it allows to use indexes
-# greetings = "hello python"
-# print(greetings[6:12])
+# BASIC VALUE TYPES
+
+#STRINGS: is a sequence of chars that represents text in python"
+'Hello Python'
+
+# STRINGS METHODS
+# print('hello python'.capitalize())
+# print('hello python'.upper())
+# print('HELLO PYTHON'.lower())
+
+# print('Goodnight Moon'.replace('Moon', 'Honey'))
+
+# 3 strings: SEQUENCE of chars: IT ALLOW US TO USE INDEXES (POSITIONS)
+# greetings = 'Hello Python'
+# # print(greetings[6:12]) #slicing a string
 # print(greetings[2])
 
+# #   exercise
 # description = "strings are..."
-# print(description.upper())
-# print(description.replace("are", "is"))
-# print(description[0:7])
 
-#numbers: integer , float , complex
-# a = 5 #(int)
-# b = 2.7 #(float)
+# print(description.upper())
+# print(description.replace('are', 'is'))
+# print(description[:7])
+
+#NUMBERS: INTEGER, FLOAT, COMPLEX
+# a = 5 #int
+# b = 2.7 #float
+
 # c = 5 + 3
 # print(c)
-# d = (5 - 2)
-# print(d)
+# d = 5 - 2
+# print(5 - 2)
+
 # print(5*2)
 # print(5**2)
-# print(10/2)
-# print(11//2) # floor division
-# print(11%2) # floor division
-# print(round(10/3 , 2))
-#
-# # TYPE CASTING
+
+print(10/2)
+print(11//2) #floor division
+print(11%2) #modulus division
+print(round(10/3 , 2))
+
+
+# TYPE CASTING
 # my_age = 35
-# print("hello my name is dolev im " + str(my_age) + " years old")
-#
-# price = "150"
+
+# print('Hello, my name is Juliana, I am ' + str(my_age) + ' years old')
+
+# price = '150'
+
 # result = int(price) + 5
 # print(result)
-#
-# user_name = int(input("what is your age?"))
-# print(user_name + 50)
-#
-#
-# # BOOLEANS - True Or False Values
-#
-# # comperaison operation
+
+# user_age = int(input('What is your age? '))
+# print(user_age + 50)
+
+# BOOLEANS: True or False values
+
+# COMPARISON OPERATORS
 # print(3 > 4)
 # print(3 < 4)
 # print(3 <= 4)
-# print(4 <=4)
-# print(4 == "4")
+# print(4 <= 4)
+# print(4 == 4)
+# print(4 == '4')
 
-#Comparison key word
+#COMPARISON KEY WORDS
+# print('JS' is 'Python')
+# print('Python' is 'Python')
+# print('Python' is not 'Python')
 
-# print("js" is "python")
-# print("python" is "python")
-# print("js" is not "python")
-#
-# a = 350
-# b = 350
-#
-# print(a == b) # True
-# print(a is b) # if they have the same id, they are in the same place
-# print(id(a))
-# print(id(b))
+a = 3000
+b = 3000
 
-# print(bool("0"))
 
-#Exercise
+print(a == b) #True
+print(a is b) #
+print(id(a))
+print(id(b))
 
+print(bool(1))
+
+#exercise
 bank_balance = '33000'
 phone_number = 532287514
 
 print(type(int(bank_balance)))
-print(type((str(bank_balance))))
+print(type(str(phone_number)))
+print(type(bank_balance))
 
-# STRING FORMATTING - F - STRING
+#STRING FORMATING: F string
 
-print(f"your bank balance is {bank_balance}, therefore you can take a loan")
+print(f'your bank balance is {bank_balance}, therefore you can take a loan.')
 
-name = "dolev"
-age = "28"
+#before f-strings - i.e before python 3 we used format():
+name = 'Juliana'
+age = 35
 
-message = "my name is {}, i am {} years old".format(name, age)
+message = 'My names is {}, I am {} years old'.format(name, age)
 print(message)
 
-user_name = "dolev"
-welcome_massege = f"{user_name}, welcome"
+user_name = 'Juliana'
+welcome_message = f'{user_name}, welcome'
 
-#varibls: naming
-my_address = "tlv"
+#VARIBLES: NAMING
+my_address = 'Ramat Gan'
 
+# VARIABLES THAT ARE CONSTANT
+PI = 3.14
+TEUDAT_ZEUT = 256666651
 
+#INCREMENTING VARIABLES
+score = 0
+score += 5
+print(score)
 
-
-
-# variable that constent
-#  pi = 3.14
-#  id = 208932616
-
-# incrementing varibels
-# score = 0
-# score += 5
-# print(score)
-#
-# my_string = "dolev"
-# my_string += "a"
-# print(my_string)
-
-
-
-
+my_string = 'Julian'
+my_string += 'a'
+print(my_string)
 
