@@ -77,6 +77,30 @@ else:
     print("its winter")
 
 
+#  Daily_Challenge
+import random
+user_input = str(input("please provide a string 10 character long"))
+len = len(user_input)
+if len < 10:
+    print("String not long enough")
+elif len > 10:
+    print("string too long")
+elif len == 10:
+    print("Perfect string")
+    print(user_input[0], user_input[9])
+
+    for i in user_input:
+        print(i)
+
+characters = list(user_input)
+random.shuffle(characters)
+shuffled = ''.join(characters)
+
+print("Shuffled string:", shuffled)
+
+
+
+
 
 
 
