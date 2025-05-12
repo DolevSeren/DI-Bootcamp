@@ -1,5 +1,4 @@
 # EX_1
-from time import monotonic
 
 my_fav_numbers = {"9", "99", "3", "8"}
 my_fav_numbers.update("5", "6")
