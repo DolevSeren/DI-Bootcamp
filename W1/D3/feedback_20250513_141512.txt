@@ -1,0 +1,13 @@
+URL: https://github.com/DolevSeren/DI-Bootcamp/blob/main/W1/D3/daily_challenge.py
+suggestions for improvement:
+- **Challenge 1:** The first challenge's solution is incorrect. It creates a dictionary mapping characters to their indices, but it doesn't group multiple occurrences of the same character into lists.  The prompt specifically requires lists as values to handle repeated characters. The `enumerate` approach is efficient but doesn't meet this requirement.
+- **Challenge 1:** The line `list(user_input)` is unnecessary and doesn't affect the outcome.
+- **Challenge 2:** The second challenge's solution is mostly correct. It effectively cleans the price strings, converts them to integers, and compares them to the wallet amount.  The sorting and 'Nothing' handling are implemented correctly.
+- **Challenge 2:**  Error handling for non-numeric characters or invalid price formats in `items_purchase` would improve robustness.
+- Improve code style: Use more descriptive variable names. For instance, instead of `wallet_clean`, use `cleaned_wallet_amount`.
+Brief justification:
+- correctness: Challenge 1 only partially fulfills the requirements; it doesn't use lists to store indices for repeated characters as stated in the prompt. Challenge 2 mostly satisfies the requirements; it correctly handles price cleaning, comparison, and output, except for some minor robustness issues.
+- readability: The code is fairly readable, but more descriptive variable names would improve clarity.  The logic in Challenge 2 is straightforward, but could be slightly enhanced with comments.
+- performance: The algorithms used are efficient for both challenges. The time complexity is linear for both challenges (O(n)), which is optimal for the given tasks.
+- security: No security vulnerabilities are present. The code does not handle any user input in a way that could be exploited. The code only interacts with data provided within the script itself.
+
