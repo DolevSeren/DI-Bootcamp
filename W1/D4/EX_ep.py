@@ -69,10 +69,9 @@ def get_random_temp():
         print("its fall")
     elif  16 < random_numbers < 23:
         print("its spring")
-    elif  24 < random_numbers < 32:
-        print("its summer")
     else:
-        print("it’s really hot! Stay cool")
+        print("its summer")
+
     return random_numbers
 
 def main():
