@@ -83,19 +83,21 @@ print(country_info(countries))
 # global scope: on the file in general
 #local scope: indented block(if statement, a for loop, a function...)
 
-global_var = 100
-def calculation(a,b):
-    addition = a+b
-    subtraction = a-b
+# global_var = 100
+# def calculation(a,b):
+#     addition = a+b
+#     subtraction = a-b
+#
+#     return addition, subtraction
+#
+# additional, substraction = calculation(5,7)
+# print(additional, substraction)
+# print(global_var)
 
-    return addition, subtraction
+def greet(name):
+    return "Hello, " + name
 
-additional, substraction = calculation(5,7)
-print(additional, substraction)
-print(global_var)
+message = greet("Alice")
 
-
-
-
-
+greet()
 

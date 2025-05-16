@@ -19,17 +19,15 @@ for col in range(len(big_list[0])):
 def replace_non_alpha_between_letters(text):
     result = []
     i = 0
-    length = len(text)
 
-    while i < length:
+    while i < len(text):
         if text[i].isalpha():
             result.append(text[i])
             i += 1
         else:
-            start = i
-            while i < length and not text[i].isalpha():
+            while i < len(text) and not text[i].isalpha():
                 i += 1
-            if result and i < length and text[i].isalpha():
+            if result and i < len(text) and text[i].isalpha():
                 result.append(' ')
 
     return ''.join(result)
