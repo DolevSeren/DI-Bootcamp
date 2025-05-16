@@ -1,0 +1,12 @@
+URL: https://github.com/DolevSeren/DI-Bootcamp/blob/main/W1/D3/Exercises_XP.py
+suggestions for improvement:
+- Exercise 1: The keys in the created dictionary don't match the case of the keys provided.  It should be `{'Ten': 10, 'Twenty': 20, 'Thirty': 30}`.
+- Exercise 3: While the code mostly correctly manipulates the Zara dictionary, the instructions for adding 'Desigual'  to `international_competitors` only  checks if the key exists. The instructions don't specify what to do if it doesn't exist. The code should handle both scenarios (key exists or not).  Consider using `setdefault` for this.
+- Exercise 4: The attempt to sort the names using `users.sort()` modifies the original `users` list in place. Create a copy before sorting to avoid unexpected side effects.  Also, the third dictionary in Exercise 4 is incorrectly produced because the list is sorted in place, and then used to produce the dictionary. There needs to be a copy made, sorted, and then used to produce the dictionary.
+- General: Add comments to explain complex parts of the code, and improve variable naming. For example, instead of new_dict1 use a more descriptive name like index_to_character_mapping.
+Brief justification:
+- correctness: The code generally solves the exercises correctly but has some minor flaws. Exercise 1 has a case mismatch. Exercise 3 has a minor logic error. Exercise 4 has an error related to in-place sorting that affects the result. 
+- readability: The code is generally readable.  However, adding more comments and improving variable names (making them more descriptive) would enhance readability, especially in Exercise 3 where the manipulations of the `brand` dictionary might become confusing for a reader if not documented well.
+- performance: The code's performance is good for these small datasets. No significant performance issues are observed.
+- security: There are no security concerns in this code. It only involves simple data manipulation and does not handle external inputs in a way that introduces vulnerabilities.
+
