@@ -1,0 +1,12 @@
+URL: https://github.com/DolevSeren/DI-Bootcamp/blob/main/W1/D4/EX_ep.py
+suggestions for improvement:
+- Exercise 3: The function `describe_city` should use f-strings for better readability and consistency with other exercises.  The multiple calls in one line are less readable.
+- Exercise 4: The function name `input_number` is misleading; it performs a comparison, not just input. Rename it to something more descriptive like `compare_numbers`. The user input should be handled with error checking (e.g., to ensure it's an integer within the range).
+- Exercise 6:  The `make_great` function modifies the list directly. While functional, creating a new list and returning it is generally a safer and more predictable practice (avoiding side effects). Also, the function name `show_megicians` has a typo.
+- Exercise 7: The `get_random_temp` function's temperature ranges are overlapping, leading to ambiguous output.  The conditional checks in `main` need better spacing and clarity, and handling of the edge cases (exactly 0, 16, 23, 32) is missing. The bonus features (floating-point and month-based seasons) are not implemented.
+Brief justification:
+- correctness: Most exercises are correctly implemented, but some have minor logical errors or inconsistencies in their implementation compared to the chapter's instructions.  For instance, Exercise 7 has overlapping temperature ranges and lacks the bonus features. Exercise 4 has poor input validation and a misleading function name. Exercise 6 directly modifies a passed-in list which is generally bad practice.
+- readability: The code is generally well-formatted and easy to follow. However, some function names could be more descriptive, and the use of f-strings is inconsistent. Some code sections could benefit from better spacing and comments to improve clarity.
+- performance: The code's performance is efficient for the given tasks.  There are no obvious performance bottlenecks.
+- security: There are no security vulnerabilities in the provided code, as it doesn't handle external input or perform any sensitive operations.
+

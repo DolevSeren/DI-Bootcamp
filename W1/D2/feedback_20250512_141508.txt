@@ -1,0 +1,11 @@
+URL: https://github.com/DolevSeren/DI-Bootcamp/blob/main/W1/D2/daily_challenge.py
+suggestions for improvement:
+- In Challenge 1, adding input validation to handle non-integer inputs would enhance robustness.  For example, a `try-except` block could catch `ValueError` exceptions.
+- In Challenge 2,  a more descriptive variable name than `new_string` (e.g., `string_without_consecutive_duplicates`) would improve readability.
+- Both challenges could benefit from adding docstrings to explain the purpose and functionality of the code.
+Brief justification:
+- correctness: Both challenges' code accurately implements the specified tasks. Challenge 1 correctly generates a list of multiples as described in the examples, and Challenge 2 successfully removes consecutive duplicate letters from the input string, adhering to all example outputs.  The code directly addresses all requirements outlined in the 'Chapter Content/Questions' section.
+- readability: The code is generally easy to understand. The variable names are mostly clear (though some improvement is suggested above). The logic is straightforward and follows a clear flow.  However, more descriptive variable names and docstrings would enhance readability further.
+- performance: The code's performance is efficient for the given tasks. The loops iterate linearly through the input data, resulting in O(n) time complexity for both challenges, which is optimal for these problems.  There are no unnecessary computations or redundant steps.
+- security: The code doesn't have any apparent security vulnerabilities. It relies solely on user input and performs basic string and numerical operations without any external dependencies or unsafe functions that could introduce security risks.
+
