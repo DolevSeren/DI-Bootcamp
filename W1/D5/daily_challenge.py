@@ -1,12 +1,12 @@
 # EX_1
 
 
-# words = input("please enter words, separated with commas: ")
-# separated_words = words.split(",")
-# sorted_words = sorted(separated_words)
-# result = ",".join(sorted_words)
-#
-# print(result)
+words = input("please enter words, separated with commas: ")
+separated_words = words.split(",")
+sorted_words = sorted(separated_words)
+result = ",".join(sorted_words)
+
+print(result)
 
 # EX_2
 
