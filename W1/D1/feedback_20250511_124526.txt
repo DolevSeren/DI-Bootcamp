@@ -1,0 +1,12 @@
+URL: https://github.com/DolevSeren/DI-Bootcamp/blob/main/W1/D1/xp_excersies.py
+suggestions for improvement:
+- The loop in step 4 should build and print progressively longer substrings, not just print each character individually.
+- Add more robust input validation to handle non-string inputs or inputs containing non-printable characters.
+- Improve code comments to clarify the purpose of each section, especially the loop.
+- Consider using f-strings for better string formatting in the output.
+Brief justification:
+- correctness: The code correctly checks the string length and prints the first and last characters if the length is 10.  It also correctly shuffles the string using random.shuffle. However, the loop in step 4 doesn't build the string progressively as required; it prints each character on a new line.  The bonus task (shuffling) is implemented correctly. The overall functionality is partially correct, missing a key aspect of the progressive string building in step 4, resulting in a score of 80%.
+- readability: The code is generally readable with clear variable names and simple logic. However, adding more comments, especially for the loop, would improve understanding.  The structure is straightforward and easy to follow.  The score is reduced slightly because of the lack of comments in certain sections,  resulting in a 90% score.
+- performance: The code's performance is good. It uses efficient string operations and the `random.shuffle` function, which has optimal time complexity. No significant performance issues are present, resulting in a 100% score.
+- security: The code doesn't have any known security vulnerabilities. It only takes user input and performs string manipulations. No external resources or data are accessed, resulting in a 100% score.
+
