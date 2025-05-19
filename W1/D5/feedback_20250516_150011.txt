@@ -1,0 +1,13 @@
+URL: https://github.com/DolevSeren/DI-Bootcamp/blob/main/W1/D5/daily_challenge.py
+suggestions for improvement:
+- In Challenge 1, the code is excellent and correctly implements the sorting functionality as described. No issues here.
+- In Challenge 2, the `long_string` function has a minor flaw. It only compares the current word's length with the length of the *first* word in the sentence and does not accurately find the longest word in all cases if the longest is not first. It needs to keep track of the longest word encountered so far.
+- Improve the readability of Challenge 2 by using more descriptive variable names (e.g., instead of `length_of_word`, use `longest_word`).
+- Challenge 2's performance could be improved by avoiding unnecessary iterations.  A single pass through the words would be more efficient.
+- Consider adding error handling in Challenge 1 to gracefully manage edge cases (e.g., empty input).  Likewise,  Challenge 2 should handle an empty sentence as input gracefully.
+Brief justification:
+- correctness: Challenge 1 perfectly matches the requirements. It takes comma-separated input, splits it, sorts it, and joins it back. The output is as expected.  Challenge 2 is partially correct; it works if the longest word is the first word in the sentence, but not otherwise. This deviates from the requirements which state to return the *first* longest word if multiple longest words exist.
+- readability: Challenge 1 is very readable.  Challenge 2's readability could be improved with better variable names and potentially a more concise approach. The logic isn't immediately apparent from the variable names and structure.
+- performance: Challenge 1 has good performance, using efficient Python built-ins. Challenge 2's performance is less than optimal due to the unnecessary iteration and the logic flaw.  A single pass with a variable tracking the longest word found would be much more efficient.
+- security: Both challenges don't involve any security vulnerabilities as they simply process input strings. There are no external resources accessed, or any sensitive information handled.
+
