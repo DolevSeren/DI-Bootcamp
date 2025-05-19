@@ -108,16 +108,6 @@ class Zoo:
 
 
 
-
-
-
-
-
-
-
-
-
-
 my_zoo = Zoo ("dolevs zoo",)
 my_zoo.add_animal("babon")
 my_zoo.add_animal("bear")

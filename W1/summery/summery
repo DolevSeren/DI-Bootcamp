@@ -1,0 +1,50 @@
+# =========================
+#  PYTHON QUICK NOTES
+#  (אפשר להעתיק כמו-שהוא למחברת)
+# =========================
+
+# ---------- Basic data types ----------
+# str   - מחרוזת טקסט          "hello"
+# int   - מספר שלם              7
+# float - מספר עשרוני           3.14
+# bool  - ערך לוגי              True / False
+
+# ---------- Sequences (אפשר לעבור עליהם לפי סדר) ----------
+# str     "abc"
+# range   range(5)  -> 0,1,2,3,4
+# list    [1, 2, 3]            # ניתנת לשינוי
+# tuple   (1, 2, 3)            # לא ניתנת לשינוי
+# set     {1, 2, 3}            # בלי כפילויות, סדר לא חשוב
+
+# ---------- Collections ----------
+# list, tuple, set (מעל) +
+# dict    {"name": "Omri", "age": 28}   # זוגות מפתח:ערך
+
+# ---------- Functions ----------
+# הגדרה:
+def say_hi(name):
+    print("Hi", name)
+
+# קריאה (call):
+say_hi("Dana")            # Positional argument
+say_hi(name="Dana")       # Keyword argument
+
+# ארגומנטים:
+# *args   - כל כמות של ערכים מיקומיים -> tuple
+# **kwargs- כל כמות של שם=ערך -> dict
+def demo(*args, **kwargs):
+    print(args)
+    print(kwargs)
+
+# ערך ברירת-מחדל:
+def greet(name="world"):
+    print("Hello", name)
+
+# ---------- Methods ----------
+# פונקציות בתוך class ­– מקבלות self ראשון
+class Dog:
+    def bark(self):
+        print("woof")
+
+d = Dog()
+d.bark()   # קריאת מתודה
