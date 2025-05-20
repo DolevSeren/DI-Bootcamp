@@ -1,0 +1,57 @@
+# ---------------- ירושה (Inheritance) ----------------
+class Parent:
+    def __init__(self):
+        self.eye_color = "brown"
+
+    def talk(self):
+        return "אני ההורה"
+
+class Child(Parent):
+    def __init__(self):
+        super().__init__()      # מפעיל את __init__ של Parent
+        self.toy = "Lego"
+
+# בדיקה
+child = Child()
+print(child.talk())      # ירש את המתודה talk
+print(child.eye_color)   # ירש את התכונה eye_color
+
+# ---------- ירושה מרובה (Multiple Inheritance) -------
+class Flyer:
+    def fly(self):
+        return "ממריא!"
+
+class Swimmer:
+    def swim(self):
+        return "שוחה!"
+
+class Duck(Flyer, Swimmer):     # יורש משני הורים
+    pass
+
+donald = Duck()
+print(donald.fly())
+print(donald.swim())
+
+# --------------- פולימורפיזם (Polymorphism) ----------
+class Animal:
+    def speak(self):
+        raise NotImplementedError  # מחייב מחלקות יורשות לממש
+
+class Dog(Animal):
+    def speak(self):
+        return "הב-הב!"
+
+class Cat(Animal):
+    def speak(self):
+        return "מיאו!"
+
+pets = [Dog(), Cat()]            # רשימה הטרוגנית – כל אובייקט מגיב אחרת
+for pet in pets:
+    print(pet.speak())           # אותה קריאה, תוצאה שונה
+
+# --------------- try / except ------------------------
+try:
+    num = int(input("הכנס מספר שלם: "))
+    print("הכפלה ב-2:", num * 2)
+except ValueError:
+    print("זה לא מספר תקין!")
