@@ -49,16 +49,17 @@ p1 = Person('Alice', 'Wonder', '1990-02-05')
 # print(type(p1.birth_date))
 # print(p1.age) #because I have @property method, the age can be accessed as an atribute
 print(p1.age)
-print(repr(p1))
-
-p2 = Person.from_age('Bob', 'Smith', 55)
-# print(p2.birth_date)
-print(p1 == p2)
-# print(p1 < p2)=
-Person.from_age("Ron", "Doe", 300)
-ron = Person.from_age("Ron", "Doe", 30)
-print(ron)
-# create a static method that format the name and last name
+# print(repr(p1))
+# print(p1.birth_date)
+#
+# p2 = Person.from_age('Bob', 'Smith', 55)
+# # print(p2.birth_date)
+# print(p1 == p2)
+# # print(p1 < p2)=
+# Person.from_age("Ron", "Doe", 300)
+# ron = Person.from_age("Ron", "Doe", 30)
+# print(ron)
+# # create a static method that format the name and last name
 # in case the first letter is not upper case
 # usage example:
 # print(Person('john','snow',32))
