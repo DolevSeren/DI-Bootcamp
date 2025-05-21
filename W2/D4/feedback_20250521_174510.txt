@@ -1,0 +1,14 @@
+URL: https://github.com/DolevSeren/DI-Bootcamp/blob/main/W2/D4/daily_exersise_W2D4.py
+suggestions for improvement:
+- The `word_frequency` method should return a more informative message when the word is not found, rather than just `None`.  Consider returning 0 or a string like 'Word not found'.
+- The `most_common_word` method converts the entire text to lowercase before counting word frequencies. While this works for the example, it might affect the analysis if case sensitivity is important. Consider adding a parameter to control case sensitivity.
+- The `remove_stop_words` method uses a very limited list of stop words.  For a more robust solution, use a readily available and more extensive stop word list from a library like NLTK.
+- Add error handling (try-except blocks) to the `from_file` method to gracefully handle potential `FileNotFoundError` exceptions.
+- Improve the efficiency of `remove_punctuation`. Instead of iterating character by character, use `translate()` for faster processing.
+- Consider adding docstrings to methods for better readability and understanding.
+Brief justification:
+- correctness: The code implements all the required classes and methods as specified in the Chapter Content/Questions.  The functionality is mostly correct, but minor improvements are needed to handle edge cases and enhance robustness, as noted in the feedback.  The `Text` class correctly handles string analysis, and the `TextModification` class performs basic text cleaning operations.  The `from_file` class method effectively reads text from a file.  However, the stop word list is very limited, and error handling is missing from `from_file`.
+- readability: The code is generally readable, with clear method names and straightforward logic.  However, adding docstrings would enhance readability significantly.  The `remove_punctuation` method could be more efficient and readable by using string's translate() method.
+- performance: The performance of the code is acceptable for small text inputs, but some methods can be optimized. The `remove_punctuation` method's character-by-character approach is less efficient than using the `translate()` method.  The use of a small, hardcoded stop word list limits the efficiency and effectiveness of `remove_stop_words`. Using a larger, pre-compiled list would be more efficient.
+- security: The code does not present any immediate security vulnerabilities. The file handling in `from_file` is secure, with the file automatically closed using `with open(...)` which avoids resource leaks. No user input is directly used in a way that could lead to vulnerabilities.
+
