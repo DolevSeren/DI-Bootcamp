@@ -62,21 +62,6 @@ class TextModification(Text):
         return clean_text
 
 
-print("Original text:")
-print(tm.text)
-
-print("\nWord frequency 'the':", tm.word_frequency("the"))
-print("Most common word:", tm.most_common_word())
-print("Unique words:", tm.unique_words())
-
-print("\nWithout punctuation:")
-print(tm.remove_punctuation())
-
-print("\nWithout stop words:")
-print(tm.remove_stop_words())
-
-print("\nWithout special characters:")
-print(tm.remove_special_characters())
 
 
 
