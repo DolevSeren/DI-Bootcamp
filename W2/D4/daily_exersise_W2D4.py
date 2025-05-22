@@ -63,6 +63,12 @@ class TextModification(Text):
 
 
 
+text1 = Text("hey there im dolev im not old hey")
+print(text1.word_frequency("im"))
+print(text1.most_common_word())
+text2 = TextModification("dolev is my name im so tired i want to go to bad so much")
+print(text2.remove_stop_words())
+print(text2.remove_special_characters())
 
 
 
