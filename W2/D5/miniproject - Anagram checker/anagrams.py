@@ -1,6 +1,6 @@
-
-
 from anagram_checker import AnagramChecker
+
+
 checker = AnagramChecker()
 print("Welcome to the Anagram Checker!")
 while True:
