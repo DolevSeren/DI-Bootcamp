@@ -1,0 +1,16 @@
+URL: https://github.com/DolevSeren/DI-Bootcamp/blob/main/W1/D5/TIC_TAC_TOE.py
+suggestions for improvement:
+- The `check_win` function is repetitive and can be significantly improved using loops to check rows, columns, and diagonals.
+- The `player_input` function should use more descriptive variable names (e.g., `row_index`, `col_index`).
+- Input validation in `player_input` could be more robust (handling non-integer input).
+- Add a clear game start message and instructions to enhance user experience.
+- The main game loop should explicitly alternate between players using a more efficient method instead of relying on the `if/else` structure.
+- The `check_tie` function should be integrated into the main game loop for better flow and efficiency.
+- Consider adding error handling for invalid input types (non-integers) in `player_input`.
+- The global variable `two_D_list` should be passed as a parameter to functions for better code organization and modularity.
+Brief justification:
+- correctness: The code implements the core Tic-Tac-Toe logic correctly: it displays the board, takes player input, checks for wins and ties. However,  `check_win` is inefficient, and the player switching logic could be improved.  The instructions mention creating functions for each step (display, input, win check, etc), but the code somewhat mixes the functionality. The code does fulfill most of the requirements mentioned in the Chapter Content/Questions, such as using lists, loops, conditional statements, functions, and user input.  It does not handle invalid inputs robustly.
+- readability: The code's readability is moderately good. Variable names could be more descriptive, and the `check_win` function is quite long and repetitive.  Using loops would significantly enhance readability in that function.  Overall, the structure and naming could be improved for better clarity and maintainability.
+- performance: The performance is reasonably good for a small game like Tic-Tac-Toe. The most significant performance concern is the lengthy and repetitive `check_win` function.  Optimizing this function would provide a notable performance boost for larger game boards.  Otherwise, the code's algorithmic efficiency is acceptable.
+- security: The code doesn't have any obvious security vulnerabilities as it's a simple command-line game. There are no external dependencies or user-provided data that could be exploited.
+
