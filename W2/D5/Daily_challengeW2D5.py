@@ -27,15 +27,20 @@ class Deck:
     def deal(self):
         if len(self.cards) > 0:
             random_card = self.cards.pop()
-            return random_card
+            print(len(self.cards))
+            print(random_card)
         else:
             return None
 
+    def play(self):
+        while len(self.cards) > 0:
+            self.deal()
 
 deck = Deck()
 deck.shuffle()
 card = deck.deal()
 print(card)
+deck.play()
 
 
 
