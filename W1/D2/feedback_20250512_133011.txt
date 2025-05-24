@@ -1,0 +1,15 @@
+URL: https://github.com/DolevSeren/DI-Bootcamp/blob/main/W1/D2/xp_exercises_D2.py
+suggestions for improvement:
+- In Exercise 1,  numbers should be integers, not strings. Type casting is needed.  Also, the concatenation of sets uses the `union()` method, not `update()`.
+- Exercise 2 incorrectly modifies a tuple. Tuples are immutable; the code should explain this and not attempt to modify it.
+- Exercise 4's loop could be more concise using a `for` loop and `range()` with a step of 0.5.  The output should be a list, not just printed values.
+- Exercise 7's fruit input handling could be improved.  It doesn't handle multiple fruits separated by commas or other delimiters well.
+- Exercise 8 lacks error handling for non-numeric input when calculating the price. 
+- Exercise 9 could use a more efficient approach to calculate total cost rather than a loop.
+- Add comments to explain the purpose of different code sections for better readability.
+Brief justification:
+- correctness: Most exercises demonstrate the correct use of data structures and control flow (loops, conditionals). However, some have minor flaws (Exercise 1, 2, 7, and 8). These flaws don't entirely invalidate the concepts but reduce the overall accuracy.
+- readability: The code is generally easy to follow. Variable names are mostly descriptive.  However, adding comments, especially to explain the logic in some parts (particularly Exercise 2) would enhance readability.
+- performance: The code's performance is acceptable for the given tasks.  Some areas (Exercise 4 and 9) could be slightly optimized by using more efficient constructs or algorithms, but the performance difference is negligible for small datasets.
+- security: There are no obvious security vulnerabilities in the provided code.  The code does not interact with external resources or handle user input in a way that could introduce security risks.
+
